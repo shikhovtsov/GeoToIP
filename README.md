@@ -9,14 +9,21 @@ GeoToIp
 
 3. В .env файле прописать данные о БД
 
-4. Запустить команду composer install
+4. Запустить команду 
+```
+composer install
+```
 
 5. Сгенерировать таблицы в БД и заполнить их тестовыми данными
+```
 php artisan migrate
 php artisan db:seed
+```
 
 6. Запустить сервер
+```
 php -S localhost:8000 -t public
+```
 
 7. GET Метод http://localhost:8000/ip2geo?ip=x.x.x.x
 ```

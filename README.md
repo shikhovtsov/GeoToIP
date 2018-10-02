@@ -19,6 +19,7 @@ php artisan db:seed
 php -S localhost:8000 -t public
 
 7. GET Метод http://localhost:8000/ip2geo?ip=x.x.x.x
+```
 1) 200 OK
 {
     "status": "success",
@@ -29,11 +30,16 @@ php -S localhost:8000 -t public
         "long": "82.93395200"
     }
 }
+```
+```
 2) 400 Bad Request
 {
     "status": "fail",
     "data": "Ip parameter is missing or has the wrong format"
 }
+```
+```
 3) 404 Not Found
 Пустой 
+```
 

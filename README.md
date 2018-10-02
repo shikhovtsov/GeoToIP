@@ -20,7 +20,7 @@ php -S localhost:8000 -t public
 
 7. GET Метод http://localhost:8000/ip2geo?ip=x.x.x.x
 ```
-1) 200 OK
+200 OK
 {
     "status": "success",
     "data": {
@@ -32,14 +32,14 @@ php -S localhost:8000 -t public
 }
 ```
 ```
-2) 400 Bad Request
+400 Bad Request
 {
     "status": "fail",
     "data": "Ip parameter is missing or has the wrong format"
 }
 ```
 ```
-3) 404 Not Found
+404 Not Found
 Пустой 
 ```
 
